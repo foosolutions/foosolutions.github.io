@@ -1,7 +1,7 @@
 # --- Basic options --- #
 
 # Name of website
-title: Foo
+title: foo
 
 # Short description of your site
 description: arbitrary solutions to ambiguous problems
@@ -12,11 +12,13 @@ author: blackfoot
 # --- List of links in the navigation bar --- #
 
 navbar-links:
-  About Me: "aboutme"
+  # About Us: "about"
   Projects:
-    - Beautiful Jekyll: "https://beautifuljekyll.com"
-    - Learn markdown: "https://www.markdowntutorial.com/"
-  Author's home: "https://foo.solutions"
+    - Gaming Security: "gaming"
+    - Application Security: "webappsec"
+    - Sports Team and League Management: "leagues"
+    - Hardware Reverse Engineering: "rehardware"
+  Contact: "contact"
 
 # --- Logo --- #
 
