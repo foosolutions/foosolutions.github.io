@@ -92,7 +92,7 @@ link-col: "#86C232"
 hover-col: "#FFFFFF"
 footer-col: "#474B4F"
 footer-text-col: "#6B6E70"
-footer-link-col: "#404040"
+footer-link-col: "#FFFFFF"
 
 
 # navbar-col: "#F5F5F5"
