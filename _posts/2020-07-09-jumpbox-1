@@ -1,0 +1,69 @@
+---
+layout: post
+title: Game Security, Modding Environment Setup
+subtitle: Excerpt from Soulshaping by Jeff Brown
+cover-img: /assets/img/path.jpg
+thumbnail-img: /assets/img/thumb.png
+share-img: /assets/img/path.jpg
+tags: [books, test]
+---
+
+https://wiki.debian.org/PXEBootInstall
+
+need to specify IPv4 interface
+/etc/default/isc-dhcp-server
+INTERFACESv4="ens19"
+#INTERFACESv6=""
+
+```
+default-lease-time 600;
+max-lease-time 7200;
+
+allow booting;
+
+# in this example, we serve DHCP requests from 192.168.0.(3 to 253)
+# and we have a router at 192.168.0.1
+subnet 10.10.10.0 netmask 255.255.255.0 {
+  range 10.10.10.15 10.10.10.253;
+  option broadcast-address 10.10.10.255;
+  option routers 10.10.10.1;             # our router
+  option domain-name-servers 10.10.10.1; # our router, again
+  filename "pxelinux.0"; # (this we will provide later)
+  next-server 10.10.10.11;                # our Server
+  host tftpclient {
+    filename "pxelinux.0"; # (this we will provide later)
+  }
+}
+
+```
+
+
+http://ftp.nl.debian.org/debian/dists/buster/main/installer-amd64/current/images/netboot/
+
+https://debian-administration.org/article/708/Automating_the_Debian_installer_with_PXE_and_preseeding
+https://www.hiroom2.com/2017/06/29/debian-9-install-pxe-boot-server-for-automated-install/
+https://www.howtoforge.com/tutorial/install-debian-9-stretch-via-pxe-network-boot-server/
+
+
+
+https://preseed.debian.net/debian-preseed/
+https://preseed.debian.net/debian-preseed/buster/amd64-main-full.txt
+https://www.debian.org/releases/buster/example-preseed.txt
+
+Preseed partman-auto/expert_recipe
+	https://www.bishnet.net/tim/blog/2015/01/29/understanding-partman-autoexpert_recipe/
+	https://sources.debian.org/src/debian-installer/20190702+deb10u4/doc/devel/partman-auto-recipe.txt/
+	https://sources.debian.org/src/partman-auto/149/lib/recipes.sh/
+	https://www.linuxjournal.com/content/preseeding-full-disk-encryption
+
+https://pve.proxmox.com/wiki/Install_Proxmox_VE_on_Debian_Buster
+
+
+Busybox
+
+https://stackoverflow.com/questions/22277892/wait-for-network-interface-before-executing-command
+
+https://unix.stackexchange.com/questions/126908/get-ssh-server-key-fingerprint
+
+Disk
+https://forum.proxmox.com/threads/how-to-create-an-lvm-thinpool-and-vz-directory-on-the-same-disk.62901/
