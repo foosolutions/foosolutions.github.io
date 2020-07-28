@@ -167,7 +167,7 @@ footer-link-col: "#FFFFFF"
 
 # Character used to separate site title and description in HTML document title
 # and RSS feed title
-title-separator: "%"
+title-separator: "-"
 
 # Ruby Date Format to show dates of posts
 date_format: "%B %-d, %Y"
