@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Game Security - Testing Environment Virtualization
-subtitle: Playing the game within the game
+title: Game Security - Environment - Virtualization
+subtitle: Proxmox VFIO for GPU Passthrough
 cover-img: /assets/img/game_banner.jpg
 thumbnail-img: /assets/img/thumb.png
 share-img: /assets/img/game_banner.jpg

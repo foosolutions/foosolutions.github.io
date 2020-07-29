@@ -1,18 +1,9 @@
----
-layout: post
-<<<<<<< HEAD
-title: Video Game Security: Introduction
-subtitle: Multi-part series exploring the complexities of Game Security
-cover-img: /assets/img/path.jpg
-thumbnail-img: /assets/img/thumb.png
-share-img: /assets/img/path.jpg
-=======
+
 title: Game Security - Introduction
 subtitle: Multi-part series exploring the complexities of Game Security
 cover-img: /assets/img/game_banner.jpg
 thumbnail-img: /assets/img/thumb.png
 share-img: /assets/img/game_banner.jpg
->>>>>>> cw/gamesec-2
 tags: [gamesec, intro]
 ---
 
