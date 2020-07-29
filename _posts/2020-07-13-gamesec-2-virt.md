@@ -62,8 +62,8 @@ So, the hardware:
 No reason for different NVMe drives, just what was laying around at the time.
 
 UPDATE: Circling back to write this up led me to some lists I wish I had read before starting the build. Use the following pages when selecting hardware:
-  * [Hardware that supports IOMMU]
-  * [Advised hardware packages if starting from scratch]
+  * [Wikipedia page of IOMMU supported Hardware](https://en.wikipedia.org/wiki/List_of_IOMMU-supporting_hardware)
+  * [Advised hardware packages if starting from scratch](https://passthroughpo.st/vfio-increments/)
 
 # Additional Steps
 
