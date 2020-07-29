@@ -1,10 +1,10 @@
 ---
 layout: post
-title: Video Game Security: Introduction
+title: Game Security - Introduction
 subtitle: Multi-part series exploring the complexities of Game Security
-cover-img: /assets/img/path.jpg
+cover-img: /assets/img/game_banner.jpg
 thumbnail-img: /assets/img/thumb.png
-share-img: /assets/img/path.jpg
+share-img: /assets/img/game_banner.jpg
 tags: [gamesec, intro]
 ---
 
@@ -17,17 +17,17 @@ So this is the first part of a series of posts I plan to write up on the subject
 The planned outline is as follows, which I'll update as this series progresses.
 
 1. Game Security Concepts, Risks, and Design
-2a. Testing Environment Setup: Virtualization
-2b. Testing Environment Setup: Networking, Tools
-3. Video Game Attack Surface
-4. File Attacks
-5. Memory Attacks
-6. Network Attacks
-7. Script-Engine Attacks
-8. Hardware Input/Output Attacks
-9. Game Server Hardening
-10. Game Economy Regulation
-11. Red Team Practices, Tools, and Development
+2. [Testing Environment Setup - Virtualization](2020-07-13-gamesec-2-virt)
+3. Testing Environment Setup - Tools
+4. Video Game Attack Surface
+6. File Attacks
+7. Memory Attacks
+8. Network Attacks
+9. Script-Engine Attacks
+10. Hardware Input/Output Attacks
+11. Game Server Hardening
+12. Game Economy Regulation
+13. Red Team Practices, Tools, and Development
 
 Stay tuned for updates, and feel free to comment below if there's anything else you'd like to see!
 
