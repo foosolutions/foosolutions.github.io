@@ -1,4 +1,4 @@
-
+---
 title: Game Security - Introduction
 subtitle: Multi-part series exploring the complexities of Game Security
 cover-img: /assets/img/game_banner.jpg
@@ -16,13 +16,8 @@ So this is the first part of a series of posts I plan to write up on the subject
 The planned outline is as follows, which I'll update as this series progresses.
 
 1. Game Security Concepts, Risks, and Design
-<<<<<<< HEAD
-2. Testing Environment Setup: Virtualization
-3. Testing Environment Setup: Networking, Tools
-=======
 2. [Testing Environment Setup - Virtualization](2020-07-13-gamesec-2-virt)
-3. Testing Environment Setup - Tools
->>>>>>> cw/gamesec-2
+3. Testing Environment Setup: Networking, Tools
 4. Video Game Attack Surface
 6. File Attacks
 7. Memory Attacks
