@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Game Security - Environment - Virtualization
+title: Game Security - Virtualization Lab
 subtitle: Proxmox VFIO for GPU Passthrough
 cover-img: /assets/img/game_banner.jpg
 thumbnail-img: /assets/img/thumb.png
@@ -10,7 +10,7 @@ tags: [gamesec, qemu, proxmox, vfio]
 
 Part of the [Game Security Series](../2020-07-07-gamesec-intro)
 
-# Hypervized Video Games
+# Hyper-vized Video Games
 
 So as I was getting back into the weeds researching the modding scene, it turns out these days all the cool kids are hacking their games using virtual machines/hypervisors. Virtualization provides a number of conveniences, especially when running "hacker" tools sourced from darker parts of the internet. You can run any number of different operating systems on the same machine, at the same time, and blast away any and all changes when you're done.
 
@@ -118,41 +118,14 @@ Some things I've seen hint at that the x4 slots are not properly isolated, but `
 I've been able to pass the `01:00` NVIDIA GPU as well as the `0a:00` USB controller to the same VM successfully, but doing so shuts down the NIC, which takes the whole machine offline. Still need to swap some PCI slots and see what exactly causes what.
 
 ```
-00:00.0 Host bridge: Intel Corporation Device 9b43 (rev 05)
-00:01.0 PCI bridge: Intel Corporation Skylake PCIe Controller (x16) (rev 05)
-00:01.1 PCI bridge: Intel Corporation Skylake PCIe Controller (x8) (rev 05)
-00:02.0 VGA compatible controller: Intel Corporation Device 9bc5 (rev 05)
-00:08.0 System peripheral: Intel Corporation Skylake Gaussian Mixture Model
-00:12.0 Signal processing controller: Intel Corporation Device 06f9
-00:14.0 USB controller: Intel Corporation Device 06ed
-00:14.2 RAM memory: Intel Corporation Device 06ef
-00:14.3 Network controller: Intel Corporation Device 06f0
-00:16.0 Communication controller: Intel Corporation Device 06e0
-00:17.0 SATA controller: Intel Corporation Device 06d2
-00:1b.0 PCI bridge: Intel Corporation Device 06c0 (rev f0)
-00:1b.4 PCI bridge: Intel Corporation Device 06ac (rev f0)
-00:1c.0 PCI bridge: Intel Corporation Device 06b8 (rev f0)
-00:1c.4 PCI bridge: Intel Corporation Device 06bc (rev f0)
-00:1c.7 PCI bridge: Intel Corporation Device 06bf (rev f0)
-00:1f.0 ISA bridge: Intel Corporation Device 0685
-00:1f.3 Audio device: Intel Corporation Device 06c8
-00:1f.4 SMBus: Intel Corporation Device 06a3
-00:1f.5 Serial bus controller [0c80]: Intel Corporation Device 06a4
+00:00.0 Host bridge: Intel Corporation Device 9bXX (rev 05)
+...
 01:00.0 VGA compatible controller: NVIDIA Corporation Device 21c4 (rev a1)
 01:00.1 Audio device: NVIDIA Corporation Device 1aeb (rev a1)
 01:00.2 USB controller: NVIDIA Corporation Device 1aec (rev a1)
 01:00.3 Serial bus controller [0c80]: NVIDIA Corporation Device 1aed (rev a1)
 02:00.0 PCI bridge: Integrated Device Technology, Inc. [IDT] PES12N3A PCI Express Switch (rev 0e)
-03:02.0 PCI bridge: Integrated Device Technology, Inc. [IDT] PES12N3A PCI Express Switch (rev 0e)
-03:04.0 PCI bridge: Integrated Device Technology, Inc. [IDT] PES12N3A PCI Express Switch (rev 0e)
-04:00.0 Ethernet controller: Intel Corporation 82571EB Gigabit Ethernet Controller (Copper) (rev 06)
-04:00.1 Ethernet controller: Intel Corporation 82571EB Gigabit Ethernet Controller (Copper) (rev 06)
-05:00.0 Ethernet controller: Intel Corporation 82571EB Gigabit Ethernet Controller (Copper) (rev 06)
-05:00.1 Ethernet controller: Intel Corporation 82571EB Gigabit Ethernet Controller (Copper) (rev 06)
-07:00.0 VGA compatible controller: NVIDIA Corporation Device 1e89 (rev a1)
-07:00.1 Audio device: NVIDIA Corporation Device 10f8 (rev a1)
-07:00.2 USB controller: NVIDIA Corporation Device 1ad8 (rev a1)
-07:00.3 Serial bus controller [0c80]: NVIDIA Corporation Device 1ad9 (rev a1)
+...
 08:00.0 USB controller: ASMedia Technology Inc. Device 3241
 09:00.0 Ethernet controller: Realtek Semiconductor Co., Ltd. Device 8125 (rev 04)
 0a:00.0 USB controller: Renesas Technology Corp. uPD720201 USB 3.0 Host Controller (rev 03)
