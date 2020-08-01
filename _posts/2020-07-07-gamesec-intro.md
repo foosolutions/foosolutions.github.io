@@ -13,20 +13,22 @@ To be clear, there is a massive community around gaming, and many games have the
 
 So this is the first part of a series of posts I plan to write up on the subject of video game security. We will cover setup and operation of a testing environment, and the general attack surface of MMO video games, some common attack and exploit methods, but most importantly hardening the client and server software.
 
+The goal here is to enable development teams. I won't be teaching anyone to build an aimbot, or "disable" my tools from being run online. All of the tooling will need to pull information from the source code, more than likely built into Visual Studio. The end result will allow developers and QA to analyze and manipulate the game client alike to common "modder" practices. Gone will be the days of throwing together and uploading a patch you "hope" will work, though mileage may vary.
+
 The planned outline is as follows, which I'll update as this series progresses.
 
-1. Game Security Concepts, Risks, and Design
-2. [Testing Environment Setup - Virtualization](2020-07-13-gamesec-2-virt)
-3. Testing Environment Setup: Networking, Tools
-4. Video Game Attack Surface
-6. File Attacks
-7. Memory Attacks
-8. Network Attacks
-9. Script-Engine Attacks
-10. Hardware Input/Output Attacks
-11. Game Server Hardening
-12. Game Economy Regulation
-13. Red Team Practices, Tools, and Development
+* Game Security Concepts, Risks, and Design
+* [Virtualization Lab Setup](../2020-07-13-gamesec-virtualization)
+* Tools Environment
+* Video Game Attack Surface
+* File Attacks
+* Memory Attacks
+* Network Attacks
+* Script-Engine Attacks
+* Hardware Input/Output Attacks
+* Game Server Hardening
+* Game Economy Regulation
+* Red Team Practices, Tools, and Development
 
 Stay tuned for updates, and feel free to comment below if there's anything else you'd like to see!
 
