@@ -447,7 +447,7 @@ footer .footer-custom-content {
 
 .post-preview a {
   text-decoration: none;
-  color: {{ site.link-col | default: "#86C232" }};
+  color: {{ site.post-preview | default: "#86C232" }};
 }
 
 .post-preview a:focus,
@@ -915,4 +915,12 @@ pre {
   color: #808080;
   font-style: italic;
   font-size: 1rem;
+}
+
+pre code {
+  color: {{ site.code | default: "#F0D464" }};
+}
+
+code {
+  color: {{ site.code | default: "#F0D464" }};
 }
